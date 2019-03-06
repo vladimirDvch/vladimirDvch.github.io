@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta class="keywords" content="">
+	<meta class="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Document</title>
+
+	<style>body { opacity: 0; overflow-x: hidden; } html{ background-color: #fff; }</style>
+
+</head>
+<body>
+
+	<div class="page-wrap sliding-wrap">
+
+    <header>
+
+      <div class="wrap-cont upper">
+        <div class="container">
+          <a href="./index.html" class="logo">
+            <img src="img/logo.png" alt="Компания Автоматические ворота">
+            <p>Компания Автоматические ворота</p>
+          </a>
+          <p class="slogan">Эксперт в мире ворот, автоматики и шлагбаумов</p>
+          <div class="wrap-ggl">
+            <p class="sale-text">При заказе ворот через приложение дополнительная скидка 5%</p>
+            <a href="https://play.google.com/store/apps/details?id=ru.mcsolutions.kav"><img src="img/gglplay.png" class="gglimg" alt="GooglePlay"></a>
+            <span class="close-ggl"></span>
+          </div>
+          <div class="phone-head">
+            <a href="tel:+74999624139">+7 (499) 962-41-39</a>
+            <a href="tel:+79854200045">+7 (985) 420-00-45</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap-cont lower">
+        <div class="container">
+          <button class="back" onclick="history.back();"></button>
+          <div class="main-menu">
+						<span class="button-menu">
+							<span class="slick"></span>
+							<span class="slick"></span>
+							<span class="slick"></span>
+							<span class="slick"></span>
+						</span>
+            <span class="menu-text">Меню</span>
+            <ul class="menu">
+              <li><a href="">Консольное оборудование</a></li>
+              <li><a href="catalog.html">Откатные ворота</a></li>
+              <li><a href="">Сопутствующие товары</a></li>
+              <li><a href="">Автоматика</a></li>
+              <li><a href="">Кованые изделия</a></li>
+              <li><a href="">Сваи</a></li>
+              <li><a href="">Роллеты</a></li>
+              <li><a href="">Пульты</a></li>
+              <li><a href="">Шлагбаумы</a></li>
+              <li><a href="">Гаражные ворота</a></li>
+              <li><a href="">Аксессуары</a></li>
+              <li><a href="">Заборы и ограждения</a></li>
+              <li><a href="">Навесы</a></li>
+              <li><a href="">Подвесные системы</a></li>
+              <li><a href="">Инструкции</a></li>
+              <li><a href="">Информация</a></li>
+              <li><a href="">Расходные материалы</a></li>
+              <li><a href="./sales.html">Акции</a></li>
+            </ul>
+          </div>
+          <div class="search">
+            <input class="input" type="text" placeholder="Введите Ваш запрос, например &quot;ворота&quot;" title="Искать"/>
+            <button class="butsearch"></button>
+            <span class="lineBottom"></span>
+          </div>
+          <div class="wrapRightIcon">
+            <div class="wrap-favorites">
+              <a class="favor1"><span class="item--favorite">10</span></a>
+              <div class="favoriteInfo">
+                <ul class="itemInFavor">
+                  <li>
+                    <a href="">
+                      <span class="initItemName">Комплект для самостоятельной сборки ворот</span>
+                      <span class="initItemPrice">19 200 руб.</span>
+                    </a>
+                    <span class="delItem"></span>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span class="initItemName">Комплект для самостоятельной сборки ворот</span>
+                      <span class="initItemPrice">19 200 руб.</span>
+                    </a>
+                    <span class="delItem"></span>
+                  </li>
+                </ul>
+                <button class="button">Смотреть все товары</button>
+              </div>
+            </div>
+            <div class="wrap-basket">
+              <a class="basket"><span class="item--basket">10</span></a><!--добавить href, удалить код в common.js -->
+              <div class="basketInfo">
+                <ul class="itemInBasket">
+                  <li>
+                    <a href="">
+                      <span class="initItemName">Комплект для самостоятельной сборки ворот</span>
+                      <span class="initItemPrice">19 200 руб.</span>
+                    </a>
+                    <span class="delItem"></span>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span class="initItemName">Комплект для самостоятельной сборки ворот</span>
+                      <span class="initItemPrice">19 200 руб.</span>
+                    </a>
+                    <span class="delItem"></span>
+                  </li>
+                  <li class="amountInBasket">
+                    <span>Сумма</span>
+                    <span>14 000 руб.</span>
+                  </li>
+                </ul>
+                <button class="button">Открыть корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+	<section class="main-sliding sliding-section">
+		<div class="wrap_blur">
+			<div class="breadcrumbs">
+				<div class="container">
+					<div class="breadcrumbs-inner">
+						<ul>
+							<li><a href="./index.html"><span>Главная</span></a></li>
+							<li><a href=""><span>Откатные ворота</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="left-sliding">
+					<div class="filter">
+						<p>Фильтрация</p>
+						<div class="wrap-filters">
+              <div class="customSelect" id="price">
+                <span class="nameSelect">Цены</span>
+                <ul class="dropDown">
+                  <li>
+                    <p class="inputBox">
+                      <input type="text" name="amount-min" title="Минимальная цена" id="amount-min" />
+                      <span>до</span>
+                      <input type="text" name="amount-max" title="Максимальная цена" id="amount-max" />
+                    </p>
+                    <div id="dropDownRange"></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="customSelect" id="manufacturer">
+                <span class="nameSelect">Производители</span>
+                <ul class="dropDown">
+                  <li>
+                    <label class="customManufacturer customizeCheckbox notClickLabel">
+                      <input type="checkbox" />
+                      <span class="customCheckbox"></span>
+                      <span class="customText" data-name="ALUTECH">ALUTECH</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="customManufacturer customizeCheckbox notClickLabel">
+                      <input type="checkbox" />
+                      <span class="customCheckbox"></span>
+                      <span class="customText" data-name="An Motors">An Motors</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="customManufacturer customizeCheckbox notClickLabel">
+                      <input type="checkbox" />
+                      <span class="customCheckbox"></span>
+                      <span class="customText" data-name="Combi Arialdo">Combi Arialdo</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="customManufacturer customizeCheckbox notClickLabel">
+                      <input type="checkbox" />
+                      <span class="customCheckbox"></span>
+                      <span class="customText" data-name="Fratelli Comunello">Fratelli Comunello</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="customManufacturer customizeCheckbox notClickLabel">
+                      <input type="checkbox" />
+                      <span class="customCheckbox"></span>
+                      <span class="customText" data-name="Собственное производство">Собственное производство</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="customSelect" id="type">
+                <span class="nameSelect">Тип</span>
+                <ul class="dropDown">
+                  <li><span>Секционные ворота</span></li>
+                  <li><span>Откатные ворота</span></li>
+                  <li><span>Промышденные ворота</span></li>
+                  <li><span>Секционные ворота</span></li>
+                  <li><span>Откатные ворота</span></li>
+                  <li><span>Промышденные ворота</span></li>
+                </ul>
+              </div>
+              <div class="customSelect" id="size">
+                <span class="nameSelect">Размер</span>
+                <ul class="dropDown">
+                  <li></li>
+                </ul>
+              </div>
+              <div class="customSelect" id="color">
+                <span class="nameSelect">Цвет</span>
+                <ul class="dropDown">
+                  <li>
+                    <span class="color" data-color="Жёлтый" style="background-color: #f8f400;"></span>
+                    <span class="nameColor">Жёлтый (RAL 1000 - RAL 1037)</span>
+                  </li>
+                  <li>
+                    <span class="color" data-color="Оранжевый" style="background-color: #ef9c00;"></span>
+                    <span class="nameColor">Оранжевый (RAL 2000 - RAL 2013)</span>
+                  </li>
+                  <li>
+                    <span class="color" data-color="Красный" style="background-color: #df0024;"></span>
+                    <span class="nameColor">Красный (RAL 3000 - RAL 3033)</span>
+                  </li>
+                  <li>
+                    <span class="color" data-color="Фиолетовый" style="background-color: #91007b;"></span>
+                    <span class="nameColor">Фиолетовый (RAL 4001 - RAL 4012)</span>
+                  </li>
+                  <li>
+                    <span class="color" data-color="Синий" style="background-color: #0669b2;"></span>
+                    <span class="nameColor">Синий (RAL 5000 - RAL 5026)</span>
+                  </li>
+                  <li>
+                    <span class="color" data-color="Зелёный" style="background-color: #007520;"></span>
+                    <span class="nameColor">Зелёный (RAL 6000 - RAL 1038)</span>
+                  </li>
+                </ul>
+              </div>
+							<label class="check1">
+								<input type="checkbox" id="check" name="check" checked>
+								<span class="custom"></span>
+								<span class="custom-text">Автоматика</span>
+							</label>
+							<label class="check2">
+								<input type="checkbox" id="check2" name="check">
+								<span class="custom"></span>
+								<span class="custom-text">Монтаж</span>
+							</label>
+						</div>
+            <div class="selectedFilterBlock">
+              <div id="selectedPrice"><span></span></div>
+              <div id="selectedManufacturer"></div>
+              <div id="selectedType"></div>
+              <div id="selectedSize"></div>
+              <div id="selectedColor"></div>
+            </div>
+						<div class="sct-wrap">
+							<span class="select-style2">Сортировка:</span>
+              <span class="current">от дешевых к дорогим</span>
+              <ul class="dropSelect">
+                <li class="active" data-value="от дешевых к дорогим">от дешевых к дорогим</li>
+                <li data-value="от дорогих к дешевым">от дорогих к дешевым</li>
+              </ul>
+						</div>
+					</div>
+
+					<div class="wrap-catalog">
+
+						<div class="katalog">
+							<div class="item">
+								<div class="item-wrap">
+									<div class="blockImage" style="background-image: url(img/img1.jpg)">
+										<div class="hidBlock"><button class="toBasket button">В корзину</button></div>
+									</div>
+									<div class="blockName">
+										<span class="desc">Комплект для самостоятельной сборки ворот</span>
+									</div>
+									<div class="costs">
+										<span class="price">14 900 руб.</span>
+									</div>
+									<a href="" class="readMore">Подробнее</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="item-wrap">
+									<div class="blockImage" style="background-image: url(img/img2.png)">
+										<div class="hidBlock"><button class="toBasket button">В корзину</button></div>
+									</div>
+									<div class="blockName">
+										<span class="desc">Комплект для самостоятельной сборки ворот</span>
+									</div>
+									<div class="costs">
+										<span class="price">14 900 руб.</span>
+									</div>
+									<a href="" class="readMore">Подробнее</a>
+									<div class="flashNew">
+										<span>Новинка</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="item-wrap">
+									<div class="blockImage" style="background-image: url(img/img1.jpg)">
+										<div class="hidBlock"><button class="toBasket button">В корзину</button></div>
+									</div>
+									<div class="blockName">
+										<span class="desc">Комплект для самостоятельной сборки ворот</span>
+									</div>
+									<div class="costs">
+										<span class="price">14 900 руб.</span>
+									</div>
+									<a href="" class="readMore">Подробнее</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="item-wrap">
+									<div class="blockImage" style="background-image: url(img/img3.png)">
+										<div class="hidBlock"><button class="toBasket button">В корзину</button></div>
+									</div>
+									<div class="blockName">
+										<span class="desc">Комплект для самостоятельной сборки ворот</span>
+									</div>
+									<div class="costs">
+										<span class="price"><span class="del">14 900 руб.</span>14 900 руб.</span>
+									</div>
+									<a href="" class="readMore">Подробнее</a>
+									<div class="flashSales">
+										<span>Акции</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="item-wrap">
+									<div class="blockImage" style="background-image: url(img/img4.png)">
+										<div class="hidBlock"><button class="toBasket button">В корзину</button></div>
+									</div>
+									<div class="blockName">
+										<span class="desc">Комплект для самостоятельной сборки ворот</span>
+									</div>
+									<div class="costs">
+										<span class="price">14 900 руб.</span>
+									</div>
+									<a href="" class="readMore">Подробнее</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="item-wrap">
+									<div class="blockImage" style="background-image: url(img/img5.png)">
+										<div class="hidBlock"><button class="toBasket button">В корзину</button></div>
+									</div>
+									<div class="blockName">
+										<span class="desc">Комплект для самостоятельной сборки ворот</span>
+									</div>
+									<div class="costs">
+										<span class="price">14 900 руб.</span>
+									</div>
+									<a href="" class="readMore">Подробнее</a>
+								</div>
+							</div>
+              <div class="item">
+                <div class="item-wrap">
+                  <div class="blockImage" style="background-image: url(img/img2.png)">
+                    <div class="hidBlock"><button class="toBasket button">В корзину</button></div>
+                  </div>
+                  <div class="blockName">
+                    <span class="desc">Комплект для самостоятельной сборки ворот</span>
+                  </div>
+                  <div class="costs">
+                    <span class="price">14 900 руб.</span>
+                  </div>
+                  <a href="" class="readMore">Подробнее</a>
+                  <div class="flashNew">
+                    <span>Новинка</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-wrap">
+                  <div class="blockImage" style="background-image: url(img/img3.png)">
+                    <div class="hidBlock"><button class="toBasket button">В корзину</button></div>
+                  </div>
+                  <div class="blockName">
+                    <span class="desc">Комплект для самостоятельной сборки ворот</span>
+                  </div>
+                  <div class="costs">
+                    <span class="price"><span class="del">14 900 руб.</span>14 900 руб.</span>
+                  </div>
+                  <a href="" class="readMore">Подробнее</a>
+                  <div class="flashSales">
+                    <span>Акции</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-wrap">
+                  <div class="blockImage" style="background-image: url(img/img1.jpg)">
+                    <div class="hidBlock"><button class="toBasket button">В корзину</button></div>
+                  </div>
+                  <div class="blockName">
+                    <span class="desc">Комплект для самостоятельной сборки ворот</span>
+                  </div>
+                  <div class="costs">
+                    <span class="price">14 900 руб.</span>
+                  </div>
+                  <a href="" class="readMore">Подробнее</a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-wrap">
+                  <div class="blockImage" style="background-image: url(img/img3.png)">
+                    <div class="hidBlock"><button class="toBasket button">В корзину</button></div>
+                  </div>
+                  <div class="blockName">
+                    <span class="desc">Комплект для самостоятельной сборки ворот</span>
+                  </div>
+                  <div class="costs">
+                    <span class="price"><span class="del">14 900 руб.</span>14 900 руб.</span>
+                  </div>
+                  <a href="" class="readMore">Подробнее</a>
+                  <div class="flashSales">
+                    <span>Акции</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-wrap">
+                  <div class="blockImage" style="background-image: url(img/img3.png)">
+                    <div class="hidBlock"><button class="toBasket button">В корзину</button></div>
+                  </div>
+                  <div class="blockName">
+                    <span class="desc">Комплект для самостоятельной сборки ворот</span>
+                  </div>
+                  <div class="costs">
+                    <span class="price"><span class="del">14 900 руб.</span>14 900 руб.</span>
+                  </div>
+                  <a href="" class="readMore">Подробнее</a>
+                  <div class="flashSales">
+                    <span>Акции</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-wrap">
+                  <div class="blockImage" style="background-image: url(img/img1.jpg)">
+                    <div class="hidBlock"><button class="toBasket button">В корзину</button></div>
+                  </div>
+                  <div class="blockName">
+                    <span class="desc">Комплект для самостоятельной сборки ворот</span>
+                  </div>
+                  <div class="costs">
+                    <span class="price">14 900 руб.</span>
+                  </div>
+                  <a href="" class="readMore">Подробнее</a>
+                </div>
+              </div>
+						</div>
+
+					</div>
+
+					<div class="nav-page">
+						<a class="showMore button">Показать еще</a>
+						<ul class="nav-more-page">
+              <li class="page-step">
+                <span class="prev-page"></span>
+              </li>
+							<li class="page-step active">
+								<span class="choose-page">1</span>
+							</li>
+							<li class="page-step">
+								<a href="">2</a>
+							</li>
+							<li class="page-step">
+								<span class="next-page"></span>
+							</li>
+							<li class="page-step">
+								<a href="">10</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="right-sliding">
+					<div class="sublayout">
+            <a href="" class="mdBlock">
+              <span class="blockName">Оставить заявку</span>
+              <img src="img/icon/ic-12.png" alt="" class="iconBlock ic-12">
+            </a>
+          </div>
+					<div class="block">
+						<a href="" class="smBlock overBlock" style="background-image: url(img/delivery.png)"><span class="blockName">Доставка</span></a>
+						<div class="sublayout">
+              <a href="" class="smBlock">
+                <span class="blockName">Контакты</span>
+                <img src="img/icon/ic-17.png" alt="" class="iconBlock ic-17">
+              </a>
+            </div>
+					</div>
+					<div class="sublayout">
+            <a href="" class="mdBlock">
+              <span class="blockName">Калькулятор</span>
+              <img src="img/icon/ic-10.png" alt="" class="iconBlock ic-10">
+            </a>
+          </div>
+					<div class="wrap-sliders">
+						<div class="slide1">
+							<div class="newsBlock2">
+								<div class="newsItem">
+									<div class="itemImage" style="background-image: url(img/img6.png)"></div>
+									<p class="title">Декоративные элементы</p>
+									<p class="desc">На нашем сайте появился новый раздел декоративные элементы из металла в котором вы можете ознакомится с новым ассортиментом.</p>
+									<a href="">Подробнее</a>
+								</div>
+								<div class="newsItem">
+									<div class="itemImage" style="background-image: url(img/img6.png)"></div>
+									<p class="title">Декоративные элементы</p>
+									<p class="desc">На нашем сайте появился новый раздел декоративные элементы из металла в котором вы можете ознакомится с новым ассортиментом.</p>
+									<a href="">Подробнее</a>
+								</div>
+								<div class="newsItem">
+									<div class="itemImage" style="background-image: url(img/img6.png)"></div>
+									<p class="title">Декоративные элементы</p>
+									<p class="desc">На нашем сайте появился новый раздел декоративные элементы из металла в котором вы можете ознакомится с новым ассортиментом.</p>
+									<a href="">Подробнее</a>
+								</div>
+								<div class="newsItem">
+									<div class="itemImage" style="background-image: url(img/img6.png)"></div>
+									<p class="title">Декоративные элементы</p>
+									<p class="desc">На нашем сайте появился новый раздел декоративные элементы из металла в котором вы можете ознакомится с новым ассортиментом.</p>
+									<a href="">Подробнее</a>
+								</div>
+								<div class="newsItem">
+									<div class="itemImage" style="background-image: url(img/img6.png)"></div>
+									<p class="title">Декоративные элементы</p>
+									<p class="desc">На нашем сайте появился новый раздел декоративные элементы из металла в котором вы можете ознакомится с новым ассортиментом.</p>
+									<a href="">Подробнее</a>
+								</div>
+							</div>
+							<p class="descWord"><a href="">Новости</a></p>
+						</div>
+						<div class="slide2">
+							<div class="salesBlock2">
+								<div class="salesItem">
+									<div class="itemImage" style="background-image: url(img/item1.png)"></div>
+									<p class="itemName">Электропривод для откатных (сдвижных) ворот AN-Motors ASL500</p>
+									<div class="itemPrice">
+										<span>всего за</span>
+										<span class="price">10 900 руб.</span>
+									</div>
+								</div>
+								<div class="salesItem">
+									<div class="itemImage" style="background-image: url(img/item1.png)"></div>
+									<p class="itemName">Электропривод для откатных (сдвижных) ворот AN-Motors ASL500</p>
+									<div class="itemPrice">
+										<span>всего за</span>
+										<span class="price"><span class="del">10 900 руб.</span>10 900 руб.</span>
+									</div>
+								</div>
+								<div class="salesItem">
+									<div class="itemImage" style="background-image: url(img/item1.png)"></div>
+									<p class="itemName">Электропривод для откатных (сдвижных) ворот AN-Motors ASL500</p>
+									<div class="itemPrice">
+										<span>всего за</span>
+										<span class="price"><span class="del">10 900 руб.</span>10 900 руб.</span>
+									</div>
+								</div>
+								<div class="salesItem">
+									<div class="itemImage" style="background-image: url(img/item1.png)"></div>
+									<p class="itemName">Электропривод для откатных (сдвижных) ворот AN-Motors ASL500</p>
+									<div class="itemPrice">
+										<span>всего за</span>
+										<span class="price">10 900 руб.</span>
+									</div>
+								</div>
+								<div class="salesItem">
+									<div class="itemImage" style="background-image: url(img/item1.png)"></div>
+									<p class="itemName">Электропривод для откатных (сдвижных) ворот AN-Motors ASL500</p>
+									<div class="itemPrice">
+										<span>всего за</span>
+										<span class="price"><span class="del">10 900 руб.</span>10 900 руб.</span>
+									</div>
+								</div>
+							</div>
+							<p class="descWord"><a href="">Акции</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+      <div class="container desc-katalog">
+        <p class="text">В данном разделе наша компания представляет цены и конструктив  выпускаемых откатных ворот. Мы производим откатные ворота и обеспечиваем поставки автоматики для ворот ведущих производителей. Производственные помещения находятся в д. Ельня МО. Производство ворот начинается с приема металла, поставщиками которого являются ведущие металлотрейдеры московского региона. В изготовлении ворот мы используем профильную трубу 80/40/3/4, 60/40/3/2, 60/30/2/1,5, 40/20, 20/20, листовой металл 1,2-3 мм, полоса 40/4. раздвижные ворота. Так же мы изготавливаем ворота из профнастила (ворота из профлиста).</p>
+        <p class="text">С 20 марта наша компания при оклёпки ворот использует профлист с порошковой окраской типо шагрень col2 шести страндартных цветов RAL 8017, RAL 6005, RAL 3005, RAL 7040, RAL 9005, RAL 5005. На заказ возможно изготовления профлиста любого цвета из таблицы RAL.</p>
+        <p class="text">Наши ворота - дешевые ворота для всех. В данном разделе наша компания представляет цены и конструктив  выпускаемых откатных ворот. Мы являемся производителем откатных ворот. Производственные помещения находятся в д. Ельня МО. Производство ворот начинается с приема металла, поставщиками которого являются ведущие металлотрейдеры московского региона. В изготовлении ворот мы используем профильную трубу 80/40/3/4, 60/40/3/2, 60/30/2/1,5, 40/20, 20/20, листовой металл 1,2-3 мм, полоса 40/4.</p>
+      </div>
+		</div>
+
+
+	</section>
+
+	<footer>
+		<div class="wrap-cont">
+			<div class="container">
+				<div class="footer-left">
+					<p>Производители</p>
+					<div class="wrap">
+						<a href="" class="smBlock">
+							<span class="proizv" style="background-image: url(img/came.png)"></span>
+						</a>
+						<a href="" class="mdBlock">
+							<span class="proizv" style="background-image: url(img/FAAC.png)"></span>
+						</a>
+						<a href="" class="mdBlock"><span class="proizv" style="background-image: url(img/Alutech.png)"></span></a>
+					</div>
+				</div>
+				<div class="footer-right">
+					<div class="mdBlock">
+						<p>Мы в соцсетях</p>
+						<div class="social">
+							<a href="" class="ic ic-li"></a>
+							<a href="" class="ic ic-g"></a>
+							<a href="" class="ic ic-vk"></a>
+							<a href="" class="ic ic-fb"></a>
+							<a href="" class="ic ic-inst"></a>
+							<a href="" class="ic ic-ut"></a>
+						</div>
+					</div>
+					<div class="mdBlock">
+						<p>Способы оплаты</p>
+						<div class="payment">
+							<a href="" class="pay pay-1"></a>
+							<a href="" class="pay pay-2"></a>
+							<a href="" class="pay pay-3"></a>
+							<a href="" class="pay pay-4"></a>
+						</div>
+						<div class="wsw">Сайт разработан <a href="https://worldshop-web.com/ru/">Worldshop-web.com</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	</div>
+
+
+
+	
+			<!-- link => CSS && SCRIPTS -->
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

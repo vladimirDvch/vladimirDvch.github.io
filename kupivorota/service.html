@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta class="keywords" content="">
+  <meta class="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Монтаж и сервисное обслуживаение</title>
+
+  <style>body { opacity: 0; overflow-x: hidden; } html{ background-color: #fff; }</style>
+  <link rel="stylesheet" href="sass/_mixins/_mixins.sass">
+</head>
+<body>
+
+  <div class="page-wrap sliding-wrap">
+
+    <div id="allPopupBlock">
+      <div class="success">
+        <div class="wrapSuccess">
+          <h4 class="h4">Спасибо за заявку!</h4>
+          <p>Мы свяжемся с вами в ближайшее время</p>
+          <span class="closeSuccess"></span>
+        </div>
+      </div>
+    </div>
+
+    <header>
+
+      <div class="wrap-cont upper">
+        <div class="container">
+          <a href="./index.html" class="logo">
+            <img src="img/logo.png" alt="Компания Автоматические ворота">
+            <p>Компания Автоматические ворота</p>
+          </a>
+          <p class="slogan">Эксперт в мире ворот, автоматики и шлагбаумов</p>
+          <div class="wrap-ggl">
+            <p class="sale-text">При заказе ворот через приложение дополнительная скидка 5%</p>
+            <a href="https://play.google.com/store/apps/details?id=ru.mcsolutions.kav"><img src="img/gglplay.png" class="gglimg" alt="GooglePlay"></a>
+            <span class="close-ggl"></span>
+          </div>
+          <div class="phone-head">
+            <a href="tel:+74999624139">+7 (499) 962-41-39</a>
+            <a href="tel:+79854200045">+7 (985) 420-00-45</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap-cont lower">
+        <div class="container">
+          <button class="back" onclick="history.back();"></button>
+          <div class="main-menu">
+						<span class="button-menu">
+							<span class="slick"></span>
+							<span class="slick"></span>
+							<span class="slick"></span>
+							<span class="slick"></span>
+						</span>
+            <span class="menu-text">Меню</span>
+            <ul class="menu">
+              <li><a href="">Консольное оборудование</a></li>
+              <li><a href="catalog.html">Откатные ворота</a></li>
+              <li><a href="">Сопутствующие товары</a></li>
+              <li><a href="">Автоматика</a></li>
+              <li><a href="">Кованые изделия</a></li>
+              <li><a href="">Сваи</a></li>
+              <li><a href="">Роллеты</a></li>
+              <li><a href="">Пульты</a></li>
+              <li><a href="">Шлагбаумы</a></li>
+              <li><a href="">Гаражные ворота</a></li>
+              <li><a href="">Аксессуары</a></li>
+              <li><a href="">Заборы и ограждения</a></li>
+              <li><a href="">Навесы</a></li>
+              <li><a href="">Подвесные системы</a></li>
+              <li><a href="">Инструкции</a></li>
+              <li><a href="">Информация</a></li>
+              <li><a href="">Расходные материалы</a></li>
+              <li><a href="./sales.html">Акции</a></li>
+            </ul>
+          </div>
+          <div class="search">
+            <input class="input" type="text" placeholder="Введите Ваш запрос, например &quot;ворота&quot;" title="Искать"/>
+            <button class="butsearch"></button>
+            <span class="lineBottom"></span>
+          </div>
+          <div class="wrapRightIcon">
+            <div class="wrap-favorites">
+              <a class="favor1"><span class="item--favorite">10</span></a>
+              <div class="favoriteInfo">
+                <ul class="itemInFavor">
+                  <li>
+                    <a href="">
+                      <span class="initItemName">Комплект для самостоятельной сборки ворот</span>
+                      <span class="initItemPrice">19 200 руб.</span>
+                    </a>
+                    <span class="delItem"></span>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span class="initItemName">Комплект для самостоятельной сборки ворот</span>
+                      <span class="initItemPrice">19 200 руб.</span>
+                    </a>
+                    <span class="delItem"></span>
+                  </li>
+                </ul>
+                <button class="button">Смотреть все товары</button>
+              </div>
+            </div>
+            <div class="wrap-basket">
+              <a class="basket"><span class="item--basket">10</span></a><!--добавить href, удалить код в common.js -->
+              <div class="basketInfo">
+                <ul class="itemInBasket">
+                  <li>
+                    <a href="">
+                      <span class="initItemName">Комплект для самостоятельной сборки ворот</span>
+                      <span class="initItemPrice">19 200 руб.</span>
+                    </a>
+                    <span class="delItem"></span>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span class="initItemName">Комплект для самостоятельной сборки ворот</span>
+                      <span class="initItemPrice">19 200 руб.</span>
+                    </a>
+                    <span class="delItem"></span>
+                  </li>
+                  <li class="amountInBasket">
+                    <span>Сумма</span>
+                    <span>14 000 руб.</span>
+                  </li>
+                </ul>
+                <button class="button">Открыть корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <section id="service" class="sliding-section">
+      <div class="wrap_blur">
+        <div class="breadcrumbs">
+          <div class="container">
+            <div class="breadcrumbs-inner">
+              <ul>
+                <li><a href="./index.html"><span>Главная</span></a></li>
+                <li><a href=""><span>Монтаж и сервисное обслуживание</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="service">
+          <div class="container">
+            <p class="sloganPage">Мы осуществляем гарантийное, пост гарантийное обслуживание и ремонт ворот, автоматики и шлагбаумов</p>
+            <div class="service__price">
+              <h3>Стоимость выезда специалиста определяется зонами:</h3>
+              <div class="service__price__blocks">
+                <div class="service__price__block">
+                  <p><b>1 500 руб.</b></p>
+                  <p>зеленая</p>
+                </div>
+                <div class="service__price__block">
+                  <p><b>2 500 руб.</b></p>
+                  <p>синяя</p>
+                </div>
+                <div class="service__price__block">
+                  <p><b>3 500 руб.</b></p>
+                  <p>красная</p>
+                </div>
+                <div class="service__price__block">
+                  <p><b>4 000 руб.</b></p>
+                  <p>желтая</p>
+                </div>
+              </div>
+              <p><b>В стоимость выезда специалиста входит</b> проверка - диагностика и профилактические работы ворот, шлагбаумов, роллет. А также бесплатная замена предохранителей, диагностика электрическиъ цепей программированию двух пультов. Все остальные работы согласно прейскуранту.</p>
+            </div>
+          </div>
+      </div>
+        <div class="service__map">
+          <h3>Определить к какой зоне вы относитесь можно с помощью карты:</h3>
+          <!-- <img src="img/service-map.png" alt=""> -->
+
+            <div id="map"></div>
+        </div>
+        <div class="service__table">
+          <h3>Прейскурант ремонтных работ</h3>
+          <div class="container">
+            <div class="service__table__tabs tabs">
+                <button class="tabs__btn tabs__prev">&larr;</button>
+                <button class="tabs__btn tabs__next">&rarr;</button>
+              <ul class="tabs__caption">
+                <li class="active">Откатные ворота</li>
+                <li>Распашные ворота</li>
+                <li>Калитка</li>
+                <li>Секционные ворота</li>
+                <li>Шлагбаумы и турникеты</li>
+                <li>Аксессуары и дополнительные работы</li>
+              </ul>
+              <div class="service__table__content tabs__content active noHover">
+                <table>
+                  <tr>
+                    <th align="left">Наименование вида монтажа / виды работы</th>
+                    <th>Стоимость (руб./ед + кв.м)</th>
+                  </tr>
+                  <tr>
+                    <td>Монтаж откатных ворот площадью до 6 кв.м. Эко-Балка</td>
+                    <td align="center">6 000</td>
+                  </tr>
+                  <tr>
+                    <td>Монтаж откатных ворот площадью до 6 кв.м. Эко-Балка</td>
+                    <td align="center">6 000</td>
+                  </tr>
+                  <tr>
+                    <td>Монтаж откатных ворот площадью до 6 кв.м. Эко-Балка</td>
+                    <td align="center">6 000</td>
+                  </tr>
+                  <tr>
+                    <td>Монтаж откатных ворот площадью до 6 кв.м. Эко-Балка</td>
+                    <td align="center">6 000</td>
+                  </tr>
+                  <tr>
+                    <td>Монтаж откатных ворот площадью до 6 кв.м. Эко-Балка</td>
+                    <td align="center">6 000</td>
+                  </tr>
+                  <tr>
+                    <td>Монтаж откатных ворот площадью до 6 кв.м. Эко-Балка</td>
+                    <td align="center">6 000</td>
+                  </tr>
+                  <tr>
+                    <td>Монтаж откатных ворот площадью до 6 кв.м. Эко-Балка</td>
+                    <td align="center">6 000</td>
+                  </tr>
+                  <tr>
+                    <td>Монтаж откатных ворот площадью до 6 кв.м. Эко-Балка</td>
+                    <td align="center">6 000</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="service__table__content tabs__content">
+                <table>
+                  <tr>
+                    <th align="left">Наименование вида монтажа / виды работы</th>
+                    <th>Стоимость (руб./ед + кв.м)</th>
+                  </tr>
+                  <tr>
+                    <td>Монтаж откатных ворот площадью до 6 кв.м. Эко-Балка</td>
+                    <td align="center">2 000</td>
+                  </tr>
+                  <tr>
+                    <td>Монтаж откатных ворот площадью до 6 кв.м. Эко-Балка</td>
+                    <td align="center">3 000</td>
+                  </tr>
+                  <tr>
+                    <td>Монтаж откатных ворот площадью до 6 кв.м. Эко-Балка</td>
+                    <td align="center">4 000</td>
+                  </tr>
+                  <tr>
+                    <td>Монтаж откатных ворот площадью до 6 кв.м. Эко-Балка</td>
+                    <td align="center">65 000</td>
+                  </tr>
+                  <tr>
+                    <td>Монтаж откатных ворот площадью до 6 кв.м. Эко-Балка</td>
+                    <td align="center">13 000</td>
+                  </tr>
+                  <tr>
+                    <td>Монтаж откатных ворот площадью до 6 кв.м. Эко-Балка</td>
+                    <td align="center">22 000</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="service__table__content tabs__content">
+                <h1>3</h1>
+              </div>
+              <div class="service__table__content tabs__content">
+                <h1>4</h1>
+              </div>
+              <div class="service__table__content tabs__content">
+                <h1>5</h1>
+              </div>
+              <div class="service__table__content tabs__content">
+                <h1>6</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="service__message">
+          <div class="container">
+            <div class="contacts__feedback">
+              <h3>Оформите заявку на монтаж или ремонт прямо сейчас</h3>
+              <form action="№" id="contact-form" class="contacts__form">
+                <div class="contacts__form__left">
+                  <input class="input" type="text" placeholder="Ваше имя" required pattern="[A-Za-zА-Яа-яЁё]{4,}">
+                  <input class="input" type="text" placeholder="Ваш номер телефона" required pattern="\+380[0-9]{9}">
+                  <input class="input" type="text" placeholder="Ваше E-mail" required pattern="[a-zA-Z][a-zA-Z0-9]{1,}@[a-zA-z]{3,}.[a-zA-z]{2,}$">
+                  <div class="wrap">
+                    <label id="install-checkbox" class="customizeCheckbox">
+                      <input type="checkbox" name="checkbox">
+                      <span class="customCheckbox"></span>
+                      <span class="custom-label">Согласие на обработку данных</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="contacts__form__right">
+                  <textarea class="input" name="" id="" cols="10" rows="7" placeholder="Сообщение" required pattern="\w"></textarea>
+                  <div class="wrap">
+                    <button class="button">Отправить</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap-cont">
+        <div class="container">
+          <div class="footer-left">
+            <p>Производители</p>
+            <div class="wrap">
+              <a href="" class="smBlock">
+                <span class="proizv" style="background-image: url(img/came.png)"></span>
+              </a>
+              <a href="" class="mdBlock">
+                <span class="proizv" style="background-image: url(img/FAAC.png)"></span>
+              </a>
+              <a href="" class="mdBlock"><span class="proizv" style="background-image: url(img/Alutech.png)"></span></a>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="mdBlock">
+              <p>Мы в соцсетях</p>
+              <div class="social">
+                <a href="" class="ic ic-li"></a>
+                <a href="" class="ic ic-g"></a>
+                <a href="" class="ic ic-vk"></a>
+                <a href="" class="ic ic-fb"></a>
+                <a href="" class="ic ic-inst"></a>
+                <a href="" class="ic ic-ut"></a>
+              </div>
+            </div>
+            <div class="mdBlock">
+              <p>Способы оплаты</p>
+              <div class="payment">
+                <a href="" class="pay pay-1"></a>
+                <a href="" class="pay pay-2"></a>
+                <a href="" class="pay pay-3"></a>
+                <a href="" class="pay pay-4"></a>
+              </div>
+              <div class="wsw">Сайт разработан <a href="https://worldshop-web.com/ru/">Worldshop-web.com</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <!-- link => CSS && SCRIPTS -->
+
+  <script src="js/scripts.min.js"></script>
+    <script>
+      var map;
+      function initMap() {
+
+        var zoom = 9;
+        var center = {lat: 55.769350, lng: 37.8};
+
+        if($(window).outerWidth() <= 1199) {
+          zoom = 8;
+          center = {lat: 55.769850, lng: 37.7};
+        }
+        if($(window).outerWidth() <= 399) {
+          zoom = 7;
+          center = {lat: 55.8, lng: 37.85};
+        }
+
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: zoom,
+          center: center,
+          disableDefaultUI: true,
+        });
+        
+        $(window).resize(function() {
+          if($(window).outerWidth() <= 1199) {
+            zoom = 8;
+            center = {lat: 55.779850, lng: 37.851023};
+          }
+          if($(window).outerWidth() <= 399) {
+            zoom = 7;
+            center = {lat: 55.8, lng: 37.85};
+          }
+          map.setZoom(zoom);
+          map.setCenter(center);
+        });
+
+        map.setOptions({styles:[
+          {
+            "stylers": [
+              {
+                "saturation": -70
+              },
+              {
+                "lightness": 15
+              }
+            ]
+          },
+          {
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "weight": 3
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text",
+            "stylers": [
+              {
+                "saturation": 55
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#373737"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative.land_parcel",
+            "elementType": "labels",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "landscape",
+            "elementType": "geometry.stroke",
+            "stylers": [
+              {
+                "weight": 8
+              }
+            ]
+          },
+          {
+            "featureType": "poi.business",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "labels.text",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "labels",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "labels",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "road.local",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "labels",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          }
+        ]});  
+
+        image = 'img/zones-lg.png';
+        var imageBounds = {
+          north: 56.2054,
+          south: 55.3354,
+          east: 38.8505,
+          west: 36.853
+        };
+        historicalOverlay = new google.maps.GroundOverlay(
+            image,
+            imageBounds);
+        historicalOverlay.setMap(map);
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4rIaix2bvKXYmwl_qUJk6ZwILq6Q7bZ8&callback=initMap">
+    </script>
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  
+  <script>
+    (function($) {
+      $(function() {
+        if($(window).outerWidth() <= 800) {
+          $('.tabs__btn').show();
+          $('ul.tabs__caption').find('li').hide();
+          $('ul.tabs__caption').find('li').eq(0).show();
+          $('ul.tabs__caption').find('li').eq(1).show();
+          $('ul.tabs__caption').find('li').eq(2).show();
+        }
+        if($(window).outerWidth() <= 400) {
+          $('.tabs__btn').show();
+          $('ul.tabs__caption').find('li').hide();
+          $('ul.tabs__caption').find('li').eq(0).show();
+          $('ul.tabs__caption').find('li').eq(1).show();
+        }
+        $(window).resize(function() {
+          if($(window).outerWidth() <= 800) {
+            $('.tabs__btn').show();
+            $('ul.tabs__caption').find('li').hide();
+            $('ul.tabs__caption').find('li').eq(0).show();
+            $('ul.tabs__caption').find('li').eq(1).show();
+            $('ul.tabs__caption').find('li').eq(2).show();
+          }
+          if($(window).outerWidth() > 800) {
+            $('ul.tabs__caption').find('li').show();
+            $('.tabs__btn').hide();
+          }
+          if($(window).outerWidth() <= 400) {
+            $('.tabs__btn').show();
+            $('ul.tabs__caption').find('li').hide();
+            $('ul.tabs__caption').find('li').eq(0).show();
+            $('ul.tabs__caption').find('li').eq(1).show();
+          }
+        });
+
+        function closeTabs(tabs, index, direction) {
+          if($(window).outerWidth() <= 400) {
+            if(direction == "right" && index <= tabs.length-2) {
+              tabs.hide();
+              for(var i = index; i < index+2; i++) {
+                $(tabs[i]).show();
+              }
+              return true;
+            }
+            else if(direction == "left" && index >= 0) {
+              tabs.hide();
+              for(var i = index; i < index+2; i++) {
+                $(tabs[i]).show();
+              }
+              return true;
+            }
+          }
+          else if($(window).outerWidth() > 400) {
+            if(direction == "right" && index <= tabs.length-2) {
+              tabs.hide();
+              for(var i = index; i < index+3; i++) {
+                $(tabs[i]).show();
+              }
+              return true;
+            }
+            else if(direction == "left" && index >= 0) {
+              tabs.hide();
+              for(var i = index; i < index+3; i++) {
+                $(tabs[i]).show();
+              }
+              return true;
+            }
+          }
+          else return false;          
+        }
+        $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+          $(this)
+            .addClass('active noHover').siblings().removeClass('active')
+            .closest('div.tabs').find('div.tabs__content').removeClass('active noHover').eq($(this).index()).addClass('active noHover');
+        });
+        var position = 0;
+        $('.tabs__btn').click(function() {
+          if($(this).attr('class') == 'tabs__btn tabs__next') {
+            position += 2;
+            if(!closeTabs($('ul.tabs__caption').find('li'), position, "right")) {
+              position -=2;
+            }
+          }
+          if($(this).attr('class') == 'tabs__btn tabs__prev') {
+            position -= 2;
+            if(!closeTabs($('ul.tabs__caption').find('li'), position, "left")) {
+              position +=2;
+            }
+          }
+        });
+      });
+    })(jQuery);
+  </script>
+</body>
+</html>
