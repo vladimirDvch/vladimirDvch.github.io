@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.bundle.css">
+  <title>Test RexIT</title>
+</head>
+<body>
+
+<div class="page" id="app">
+
+  <header>
+    <div class="header__info">
+      <div class="wrapper">
+        <a href="#" class="logo">Cracker</a>
+        <div class="header__quantity">
+          <div class="header__counter">3</div>
+        </div>
+        <div class="header__price">
+          total:
+          <span class="cy">143</span>
+        </div>
+        <button
+          type="button"
+          class="header__basket"
+          @click="displayBasket = !displayBasket"
+        >
+          <span>details</span>
+          <i></i>
+        </button>
+        <div
+          class="basket"
+          :class="displayBasket ? 'show' : 'hidden'"
+        >
+          <div class="basket-header">
+            <div
+              class="basket__close"
+              @click="displayBasket = !displayBasket"
+            ><span></span></div>
+          </div>
+          <div class="basket-main">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+
+              <tr>
+                <td
+                  v-for="(th, index) in 7"
+                >
+                  <span v-if="index > 0 && index < 5" >
+                    <img :src="`./img/basket/elem-${index}.png`" alt="" />
+                  </span>
+                </td>
+              </tr>
+
+              <tr
+                v-for="(td, index) in tdArr"
+                :key="`td-${index}`"
+              >
+                <td
+                  v-for="(tdItem, index) in td"
+                  :key="`tdItem-${index}`"
+                  v-html="tdItem"
+                ></td>
+              </tr>
+
+            </table>
+          </div>
+          <div class="basket-footer">
+            <div class="basket__total">Total: <span>143 €</span></div>
+            <button class="basket__checkout" type="button">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="header__menu">
+      <div class="wrapper">
+        <ul class="menu">
+          <li
+            class="menu__element"
+            v-for="item in menu"
+          >
+            <a class="menu__link" href="#">{{ item }}</a>
+            <span class="menu__separat"></span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="slider" style="background-image:url('./img/bg.png')">
+      <div class="wrapper">
+        <div class="slider__text offsetX offsetLeft">
+          <div>
+            <h2 class="h2 left">mostly tastes<br />with freshes</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <button class="slider__button" type="button">Taste it</button>
+      </div>
+    </div>
+
+    <div class="overlay" style="background-image:url('./img/bg-about.png')">
+
+      <div class="about">
+
+        <div class="wrapper">
+          <h2 class="h2 right">About Cracker</h2>
+
+          <div class="about__text" data-name="Cracker">
+            <div class="offsetX">
+              <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, architecto beatae vitae dicta sunt explicabo. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="constructor">
+
+        <div class="wrapper">
+          <h2 class="h2">Cracker constructor</h2>
+          <div class="constructor__value">Current value: <span class="cy">143</span></div>
+
+          <div class="constructor__container">
+            <div class="constructor__element constrElement"
+                 v-for="(elem, index) in constructorElements"
+                 :key="`elem-${index}`"
+            >
+              <div class="constrElement__image">
+                <img
+                  :src="`./img/constructor/elem-${index+1}.png`" alt=""
+                />
+              </div>
+
+              <div class="constrElement__range">
+                <input type="range"
+                       min="0"
+                       max="100"
+                       step="1"
+                       v-model="rangesValue[index]"
+                       @input.prevent="rangeValue(rangesValue[index] ,index)"
+                       :style="`background: linear-gradient(to right, transparent, transparent 38px, ${elem.color} 39px);`"
+                />
+              </div>
+
+              <div class="constrElement__percent">
+                <span>{{ rangesValue[index] }}</span>
+                %
+              </div>
+
+            </div>
+
+            <div class="constructor__element constrElement">
+              <div class="constrElement__image">
+                <img
+                  :src="`./img/constructor/elem-default.png`" alt=""
+                />
+              </div>
+
+              <div class="constrElement__range defaultRange">
+                <input type="range"
+                       min="0"
+                       max="100"
+                       :value="reminder"
+                       step="1"
+                       disabled="true"
+                       style="background: linear-gradient(to right, rgba(51,51,51,.5), rgba(51,51,51,.5) 582px, transparent 582px, transparent)"
+                />
+              </div>
+
+              <div class="constrElement__percent">
+                <span>{{ reminder }}</span>
+                %
+              </div>
+
+            </div>
+
+            <div class="constructor__element constrElement packElement">
+
+              <div class="constrElement__image">
+                <img
+                  :src="`./img/constructor/elem-custom.png`" alt=""
+                />
+              </div>
+
+              <div class="constrElement__range">
+                <button
+                  type="button"
+                  :data-text="choosePack"
+                  class="constrPack__button"
+                  @click="displayPackList = !displayPackList"
+                >
+                  <i></i>
+                </button>
+                <ul
+                  class="constrPack__list"
+                  :class="`${ displayPackList ? 'show': 'hidden' }`"
+                >
+                  <li
+                    class="constrPack__element"
+                    v-for="(elem, index) in packList"
+                    :key="`pack-${index}`"
+                    @click="funcChoosePack(elem)"
+                  >
+                    {{ elem.name }}
+                  </li>
+                </ul>
+              </div>
+
+              <div class="constrElement__percent">
+                <button type="button" class="addPack">Add to cart</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer style="background-image: url('./img/fbg.png');">
+
+    <div class="wrapper">
+
+      <div class="footer__nav">
+
+        <div class="footer__element">
+          <div class="contact__name">
+            <i style="background-image:url('./img/fa-phone.png');"></i>
+            <div>
+              <span>phone</span>
+              <a href="tel:+43(987)3456782">+43 ( 987 ) 345 - 6782</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__element">
+          <div class="contact__name">
+            <i style="background-image:url('./img/fa-map-marker.png');width: 20px;"></i>
+            <div>
+              <span>address</span>
+              <p>Cracker Inc. <br />
+                10 Cloverfield Lane <br />
+                Berlin, IL 10928 <br />
+                Germany
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__element">
+          <div class="contact__name">
+            <i style="background-image:url('./img/fa-share-alt.png');"></i>
+            <div>
+              <span>share us</span>
+              <ul class="share">
+                <li class="share__element"
+                  v-for="item in shareUs"
+                    :key="item.icon"
+                >
+                  <i class="share__icon" :style="`background-image: url(./img/${item.icon}.png)`"></i>
+                  <a :href="item.href" target="_blank">{{ item.href }}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</div>
+
+<script src="./js/bundle.js"></script>
+</body>
+</html>
