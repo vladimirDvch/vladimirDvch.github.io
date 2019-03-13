@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Seven20</title>
-    <link rel="stylesheet" href="./css/style.bundle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Title</title>
+  <link rel="stylesheet" href="./css/style.bundle.css">
 </head>
 <body>
 
 <div class="container-svg" style="display:none"></div>
 <div class="page" id="page">
-  <!--<div class="separ"></div>-->
   <header>
     <div class="wrp">
 
       <div class="header__container">
-
-        <div class="menu__btn"></div>
 
         <a href="#" class="logo">
           <object data="img/logo.svg" type="image/svg+xml"></object>
@@ -74,96 +71,50 @@
 
       <div class="process">
 
+        <h3 class="h3 headline center">Streamline your<span class="colored ml">Business Processes</span></h3>
         <div class="process__container">
-          <div>
-            <h3 class="h3 headline center">Streamline your<span class="colored ml">Business Processes</span></h3>
-            <div class="process-scheme" >
-              <div
-                class="process-scheme__item"
-                v-for="(item, n) in processScheme"
-                :key="`scheme-item-${n}`"
-              >
-                <div class="process-scheme__circle">
-                  <span class="circle__pointer"></span>
-                  <svg viewBox="0 0 116 116" width="116" height="116" class="process-scheme__stroke">
-                    <circle r="57" stroke-width="2" cx="58" cy="58" fill="transparent" stroke="rgba(255,255,255,.1)" class="circle-basic" />
-                    <circle r="56.5" stroke-width="3" cx="58" cy="58" fill="transparent" stroke="#2CDCEB" class="circle-dinamic"
-                            stroke-dasharray="0 357"
-                    />
-                  </svg>
-                  <object :data="`img/process/img-${n+1}.svg`" type="image/svg+xml" class="process-scheme__img"></object>
-                </div>
-                <div class="process-scheme__headline" v-html="item.headline"></div>
-                <div class="process-scheme__separator"
-                     :class="n == 0 || n == 1 || n == 6 ? 'linear linear__right' : n == 4 || n == 5 ? 'linear linear__left' : n == 2 ? 'rectangle rectangle__right' : n == 3 ? 'rectangle rectangle__left' : 'rectangle rectangle__horizontal rectangle__left'"
-                >
-                  <span class="dashed"></span>
-                  <span class="solid"></span>
-                  <span  v-if="n == 2 || n == 3 || n == 7" class="rectangle__copy"></span>
-                  <svg
-                    v-if="n == 2 || n == 3"
-                    viewBox="0 0 49 225" x="0" y="0" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="49" height="221" :x="n == 2 ? -2 : n == 3 ? 0 : 2" y="2" stroke-width="2" fill="none"
-                          stroke-dasharray="544px 544px" stroke-dashoffset="540px"
-                    />
-                  </svg>
-                  <svg
-                    v-if="n == 7"
-                    viewBox="0 0 250 77" x="0" y="0" xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="250" height="77" x="0" y="0" stroke-width="2" fill="none"
-                          stroke-dasharray="662 662" stroke-dashoffset="662"
-                    />
-                  </svg>
-                </div>
+          <div class="process-scheme">
+            <div
+              class="process-scheme__item"
+              v-for="(item, n) in processScheme"
+              :key="`scheme-item-${n}`"
+            >
+              <div class="process-scheme__circle">
+                <span class="circle__pointer"></span>
+                <svg viewBox="0 0 116 116" width="116" height="116" class="process-scheme__stroke">
+                  <circle r="57" stroke-width="2" cx="58" cy="58" fill="transparent" stroke="rgba(255,255,255,.1)" class="circle-basic" />
+                  <circle r="56.5" stroke-width="3" cx="58" cy="58" fill="transparent" stroke="#2CDCEB" class="circle-dinamic"
+                          stroke-dasharray="0 357"
+                  />
+                </svg>
+                <object :data="`img/process/img-${n+1}.svg`" type="image/svg+xml" class="process-scheme__img"></object>
+              </div>
+              <div class="process-scheme__headline" v-html="item.headline"></div>
+              <div class="process-scheme__helper">
+                <span class="circle__pointer">
+                  <span class="process__contract"
+                        v-if="n == 6"
+                  >contract</span>
+                </span>
               </div>
             </div>
           </div>
           <div class="process__list">
-            <div class="scrolled__list">
-              <div class="process__block"
-                   v-for="(item, n) in processScheme"
-                   :key="`process-item-${n}`"
+            <!--<div class="separ"></div>-->
+            <div @scroll="transformScrolled">
+              <div
+                class="process__item"
+                v-for="(item, n) in processScheme"
+                :key="`process-item-${n}`"
               >
-                <div class="process__item">
-                  <div class="process-step__counter">step {{ n + 1 }}</div>
-                  <div class="process-step__headline" v-html="item.headline"></div>
-                  <p>{{ item.text }}</p>
-                </div>
-                <div class="process__separator"></div>
+                <div class="process-step__counter">step {{ n + 1 }}</div>
+                <div class="process-step__headline" v-html="item.headline"></div>
+                <p>{{ item.text }}</p>
               </div>
             </div>
           </div>
         </div>
 
-      </div>
-
-      <div class="mobi-process">
-        <h3 class="h3 headline center">Streamline your<span class="colored ml">Business Processes</span></h3>
-        <svg viewBox="0 0 300 300" width="300" height="300" class="mobi-process__stroke">
-          <circle r="148" stroke-width="4" cx="150" cy="150" fill="transparent" stroke="rgba(255,255,255,.1)" class="circle-basic" />
-          <circle r="148" stroke-width="4" cx="150" cy="150" fill="transparent" stroke="#2CDCEB" class="circle-dinamic"
-                  stroke-dasharray="0 357"
-          />
-        </svg>
-        <div class="mobi-process__list">
-          <!--<div class="separ"></div>-->
-          <div class="vertical-scroll">
-            <div>
-              <div class="mobi-process__block"
-                   v-for="(item, n) in processScheme"
-                   :key="`mobi-process-item-${n}`"
-              >
-                <div class="mobi-process__item">
-                  <div class="mobi-process__counter">step {{ n + 1 }}</div>
-                  <div class="mobi-process__headline" v-html="item.headline"></div>
-                  <p>{{ item.text }}</p>
-                </div>
-                <div class="mobi-process__separator"></div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
     </div>
